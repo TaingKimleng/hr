@@ -9,7 +9,7 @@ const dbconnect = require('./dbconnect.js');
 const PersonModel = require('./Workforce_schema.js');
 const TaskModel = require('./meeting_schema.js');
 const SubmitTaskModel = require('./finance_schema.js');
-
+connectDB();
 // GET /finance - View financial data 
 app.get('/finance', (req, res) => {
     console.log("INSIDE HR /finance API");
