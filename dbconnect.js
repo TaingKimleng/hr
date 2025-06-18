@@ -14,15 +14,6 @@ async function run() {
     await mongoose.disconnect();
   }
 }
-run().catch(console.dir);
-mongoose.connect('mongodb://localhost:5005/kim leng', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-.then(() => console.log('MongoDB connected'))
-.catch(err => {
-  console.error('MongoDB connection error:', err);
-});
 
 module.exports= mongoose;
 
